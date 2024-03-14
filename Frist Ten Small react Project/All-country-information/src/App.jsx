@@ -1,33 +1,37 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
+import Cart from './componets/Cart'
+
+import NavBar from './componets/NavBar'
+import Countries from './componets/Countries'
+import { useState } from 'react'
+
+
 
 function App() {
-  const [count, setCount] = useState(0)
+const [visitedCountry,setVisiteCountry] = useState([])
+
+  const totalVisitedCountry = (countryData) =>{
+    const wasAdded =  visitedCountry.filter(visite => visite.area == countryData.area)
+    if(wasAdded.length === 0){
+   const visited = [countryData,...visitedCountry];
+    setVisiteCountry(visited)
+    }else{
+      alert("That is allready added")
+    }
+    
+  }
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+     <header>
+       <NavBar></NavBar>
+     </header>
+
+     <main className='flex flex-col md:flex-row gap-5'>
+      <Countries totalVisitedCountry={totalVisitedCountry}></Countries>
+      <Cart visitedCountry={visitedCountry}></Cart>
+     </main>
     </>
   )
 }

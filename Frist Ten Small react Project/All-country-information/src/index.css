@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  header,
+  main {
+    @apply w-11/12 md:w-4/5 lg:max-w-[1280px] mx-auto;
+  }
+  p {
+    @apply font-bold text-gray-700;
+  }
+}

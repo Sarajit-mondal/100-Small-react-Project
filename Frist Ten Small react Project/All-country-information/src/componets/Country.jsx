@@ -27,7 +27,7 @@ const Country = ({countryData,totalVisitedCountry}) => {
     <div className="card-actions justify-between">
       <div onClick = {()=>{handlevisited();}} className=
       {`badge badge-outline cursor-pointer ${visited && 'bg-green-400'}`} >{visited ? "visited" : "Going"}</div> 
-      <div onClick={handleMark} className={`badge badge-outline cursor-pointer`}>{mark ?'Marked' : 'Mark'}</div>
+      <button onClick={handleMark} className={`btn btn-primary`}>{mark ?'Marked' : 'Mark'}</button>
     </div>
   </div>
 </div>

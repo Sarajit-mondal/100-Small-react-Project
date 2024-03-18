@@ -11,6 +11,7 @@ import { useState } from 'react'
 function App() {
 const [visitedCountry,setVisiteCountry] = useState([])
 
+  // which countries you visited
   const totalVisitedCountry = (countryData) =>{
     const wasAdded =  visitedCountry.filter(visite => visite.area == countryData.area)
     if(wasAdded.length === 0){

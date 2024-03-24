@@ -1,0 +1,7 @@
+1. use routing &&& nested route <Outlet/>
+2. featch data
+3. use params
+4. useNavigate  if you want back previous page than use useNavigate
+5. Like to={'/componet Name'} which page you want to go write that page or componet name inside to={}
+6. NavLink its simoler to Like but NavLink give exta active class
+7.

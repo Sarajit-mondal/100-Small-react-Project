@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  main {
+    @apply w-11/12 mx-auto max-w-[1280px];
+  }
+}
+
+ul a.active {
+  font-weight: bold;
+  padding-bottom: 10px;
+  border-bottom: 2px solid red;
+}

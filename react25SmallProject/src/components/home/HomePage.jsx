@@ -8,13 +8,13 @@ function HomePage() {
           className="py-3 px-5 font-bold bg-sky-200 rounded-full hover:bg-sky-300"
           to="/accordian"
         >
-          Link1
+          Accordian
         </Link>
         <Link
           className="py-3 px-5 font-bold bg-sky-200 rounded-full hover:bg-sky-300"
-          to=""
+          to="hexOrRgbColor"
         >
-          Link1
+          Color Generator
         </Link>
         <Link
           className="py-3 px-5 font-bold bg-sky-200 rounded-full hover:bg-sky-300"

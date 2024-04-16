@@ -18,9 +18,9 @@ function HomePage() {
         </Link>
         <Link
           className="py-3 px-5 font-bold bg-sky-200 rounded-full hover:bg-sky-300"
-          to=""
+          to="/starRating"
         >
-          Link1
+          Star Rating
         </Link>
         <Link
           className="py-3 px-5 font-bold bg-sky-200 rounded-full hover:bg-sky-300"

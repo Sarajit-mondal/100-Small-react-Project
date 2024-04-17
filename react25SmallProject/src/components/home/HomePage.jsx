@@ -30,9 +30,9 @@ function HomePage() {
         </Link>
         <Link
           className="py-3 px-5 font-bold bg-sky-200 rounded-full hover:bg-sky-300"
-          to=""
+          to="/loadMoreData"
         >
-          Link1
+          Load More-Data
         </Link>
         <Link
           className="py-3 px-5 font-bold bg-sky-200 rounded-full hover:bg-sky-300"

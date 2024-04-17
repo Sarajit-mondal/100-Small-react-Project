@@ -5,6 +5,7 @@ import Accordian from "../components/25Project/Accordian";
 import ColorGenerator from "../components/25Project/ColorGenerator";
 import StarRating from "../components/25Project/StarRating";
 import ImageSlider from "../components/25Project/ImageSlider";
+import LoadMoreData from "../components/25Project/LoadMoreData";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
         path: "/imageSlider",
         loader: () => fetch("https://picsum.photos/v2/list?page=1&limit=10"),
         element: <ImageSlider></ImageSlider>,
+      },
+      {
+        path: "/loadMoreData",
+        element: <LoadMoreData></LoadMoreData>,
       },
     ],
   },

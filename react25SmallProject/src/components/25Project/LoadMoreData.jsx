@@ -37,13 +37,16 @@ function LoadMoreData() {
             </div>
           ))}
       </div>
+
       <button
         onClick={() => setSkip(skip + 1)}
-        className="mx-auto block p-5 border-2 rounded-xl mb-10 active:scale-95"
+        className="mx-auto block p-5 border-2 rounded-xl mb-5 active:scale-95"
       >
-        Load more Data
+        {data.length == 100 ? "Show Less" : " Load more Data"}
       </button>
-      <p>{data.length}</p>
+      {data.length === 100 && (
+        <p className="text-center mb-5">Products are {data.length}</p>
+      )}
     </div>
   );
 }

@@ -24,9 +24,9 @@ function HomePage() {
         </Link>
         <Link
           className="py-3 px-5 font-bold bg-sky-200 rounded-full hover:bg-sky-300"
-          to=""
+          to="/imageSlider"
         >
-          Link1
+          Image Slider
         </Link>
         <Link
           className="py-3 px-5 font-bold bg-sky-200 rounded-full hover:bg-sky-300"
